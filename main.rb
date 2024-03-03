@@ -6,4 +6,14 @@ require './filters'
 
 ## Your test code can go here
 
-pp @candidates
+# ## should be true
+pp experienced?(@candidates[0])
+
+# ## Should find 6 year xp person
+pp find(9)
+
+# ## 3 Qualified
+pp qualified_candidates(@candidates)
+
+## sort 12 year at top 2 tied
+pp ordered_by_qualifications(@candidates)
